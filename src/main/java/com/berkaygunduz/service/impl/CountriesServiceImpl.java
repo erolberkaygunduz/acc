@@ -45,6 +45,7 @@ public class CountriesServiceImpl implements CountriesService {
         List<CountriesDTO> countriesDTOList = new ArrayList<>();
         countriesList.stream().limit(10).forEach(it -> {
             CountriesDTO countriesDTO = new CountriesDTO();
+            countriesDTO.setCode(it.getCode());
             countriesDTO.setName(it.getName());
             countriesDTO.setContinent(it.getContinent());
             countriesDTO.setId(it.getId());
