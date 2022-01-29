@@ -5,7 +5,8 @@
 * Lombok
 * Maven
 * Lombok
-* Postman
+* Tomcat (Spring Boot Web has Tomcat by default.)
+* Postman 
 
 ### This project is a simple application to show my skills as a Java developer.
 
