@@ -1,7 +1,6 @@
 package com.berkaygunduz.service;
 
 import com.berkaygunduz.dto.AirportDTO;
-import com.berkaygunduz.entity.Airports;
 
 import java.util.List;
 

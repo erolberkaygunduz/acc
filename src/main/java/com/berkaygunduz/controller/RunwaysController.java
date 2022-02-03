@@ -1,6 +1,5 @@
 package com.berkaygunduz.controller;
 
-import com.berkaygunduz.dto.AirportDTO;
 import com.berkaygunduz.dto.RunwaysDTO;
 import com.berkaygunduz.service.RunwaysService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -16,11 +16,6 @@ import java.util.*;
 @Table(name = "airports")
 public class Airports extends AirportDTO implements Serializable {
 
-//    //@JsonManagedReference(value = "airportToCountry")
-//    @ManyToOne(fetch = FetchType.EAGER)
-//    @JoinColumn(name = "iso_country")
-//    private Countries countries;
-
     @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "airport_ref")
     private List<Runways> runways;

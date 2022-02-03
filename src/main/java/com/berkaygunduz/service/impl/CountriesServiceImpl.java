@@ -3,14 +3,12 @@ package com.berkaygunduz.service.impl;
 import com.berkaygunduz.dto.CountriesDTO;
 import com.berkaygunduz.entity.Countries;
 import com.berkaygunduz.repository.CountriesRepo;
-import com.berkaygunduz.repository.RunwaysRepo;
 import com.berkaygunduz.service.CountriesService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor

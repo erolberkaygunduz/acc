@@ -1,6 +1,5 @@
 package com.berkaygunduz.service.impl;
 
-import com.berkaygunduz.dto.AirportDTO;
 import com.berkaygunduz.dto.RunwaysDTO;
 import com.berkaygunduz.entity.Runways;
 import com.berkaygunduz.repository.RunwaysRepo;

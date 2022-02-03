@@ -1,7 +1,6 @@
 package com.berkaygunduz.service;
 
 import com.berkaygunduz.dto.CountriesDTO;
-import com.berkaygunduz.entity.Countries;
 
 import java.util.List;
 
