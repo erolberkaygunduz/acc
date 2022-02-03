@@ -5,7 +5,8 @@
 * Lombok
 * Maven
 * Lombok
-* Postman
+* Tomcat (Spring Boot Web has Tomcat by default.)
+* Postman 
 
 ### This project is a simple application to show my skills as a Java developer.
 
@@ -24,3 +25,5 @@ http://localhost:8080/countries/getCountriesByCode?codeOrName=Turkey
 http://localhost:8080/countries/getTopTenCountry
 * BONUS : Support retrieving the information given a partial/fuzzy country code/name as input parameter, e.g. entering 'zimb' will result in 'Zimbabwe'.    
 http://localhost:8080/countries/getCountriesBonus?bonus=Zimb
+
+And more...
