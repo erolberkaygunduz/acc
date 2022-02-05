@@ -1,7 +1,6 @@
 package com.berkaygunduz.entity;
 
 
-import com.berkaygunduz.dto.AirportDTO;
 import lombok.*;
 
 import javax.persistence.*;
@@ -14,7 +13,7 @@ import java.util.*;
 @AllArgsConstructor
 @ToString(includeFieldNames=true)
 @Table(name = "airports")
-public class Airports extends AirportDTO implements Serializable {
+public class Airports implements Serializable {
 
     @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "airport_ref")
@@ -39,7 +38,7 @@ public class Airports extends AirportDTO implements Serializable {
     @Column(name = "continent")
     private String continent;
     @Column(name = "iso_country")
-    private String iso_country;
+    private String isocountry;
     @Column(name = "iso_region")
     private String iso_region;
     @Column(name = "municipality")

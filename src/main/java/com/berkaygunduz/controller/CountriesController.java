@@ -17,8 +17,9 @@ public class CountriesController {
 
 
     @RequestMapping(value = "/getCountriesByCode", method = RequestMethod.GET)
-    public ResponseEntity<CountriesDTO> getCountriesByCode(@RequestParam(value = "codeOrName" )String codeOrName){
-        return ResponseEntity.ok(countriesService.getCountriesByCode(codeOrName));
+    public ResponseEntity<List<CountriesDTO>> getCountriesByCode(@RequestParam(value = "code" ,required = false)String code,
+                                                                 @RequestParam(value = "name" ,required = false)String name){
+        return ResponseEntity.ok(countriesService.getCountriesByCode(code,name));
     }
 
     @GetMapping(value = "/getTopTenCountry")

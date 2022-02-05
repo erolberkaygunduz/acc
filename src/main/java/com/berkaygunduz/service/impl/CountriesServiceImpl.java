@@ -23,16 +23,18 @@ public class CountriesServiceImpl implements CountriesService {
     }
 
     @Override
-    public CountriesDTO getCountriesByCode(String codeOrName) {
-        Countries countries = countriesRepo.findAll().stream().filter(it->it.getCode().equalsIgnoreCase(codeOrName)).findAny()
-                .orElse(countriesRepo.findAll().stream().filter(iy->iy.getName().equalsIgnoreCase(codeOrName)).findAny().orElse(null));
-        CountriesDTO countriesDTO = new CountriesDTO();
-        countriesDTO.setId(countries.getId());
-        countriesDTO.setContinent(countries.getContinent());
-        countriesDTO.setName(countries.getName());
-        countriesDTO.setCode(countries.getCode());
-        countriesDTO.setAirports(countries.getAirports());
-        return countriesDTO;
+    public List<CountriesDTO> getCountriesByCode(String code,String name) {
+        List<Countries> countriesList = countriesRepo.findByCodeOrName(code,name);
+        List<CountriesDTO> countriesDTOList = new ArrayList<>();
+        countriesList.forEach(it -> {
+            CountriesDTO countriesDTO = new CountriesDTO();
+            countriesDTO.setCode(it.getCode());
+            countriesDTO.setName(it.getName());
+            countriesDTO.setContinent(it.getContinent());
+            countriesDTO.setId(it.getId());
+            countriesDTOList.add(countriesDTO);});
+
+        return countriesDTOList;
     }
 
     @Override

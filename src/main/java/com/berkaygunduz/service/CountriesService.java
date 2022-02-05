@@ -8,7 +8,7 @@ public interface CountriesService {
 
     List<CountriesDTO> getAll();
 
-    CountriesDTO getCountriesByCode(String code);
+    List<CountriesDTO> getCountriesByCode(String code,String name);
 
     List<CountriesDTO> getTopTenCountry();
 
